@@ -1,0 +1,56 @@
+
+POST http://localhost:3000/transactions/
+Content-Type: application/json
+
+{
+    "id": 5,
+    "type": "Expense",
+    "category": "Order",
+    "amount": 10000,
+    "date": "2024-10-24",
+    "description": "Amazon Order"
+}
+
+GET http://localhost:3000/transactions/
+
+
+GET http://localhost:3000/transactions/5/
+
+
+PUT http://localhost:3000/transactions/4/
+Content-Type: application/json
+
+{
+    "type": "Income",
+    "category": "Salary",
+    "amount": 20000,
+    "date": "2024-10-24",
+    "description": "SBI Payments"
+}
+
+
+DELETE http://localhost:3000/transactions/1/
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"kalyan",
+    "username":"kalyan1993",
+    "password": "kalyan@03",
+    "gender": "Male",
+    "location":"warangal"
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"rahul123",
+    "password": "rahul@456"
+}
